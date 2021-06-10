@@ -7,6 +7,10 @@ Feature: Food
     When I run `foodie portray broccoli`
     Then the output should contain "Gross!"
 
+  Scenario: Apple is meh
+    When I run `foodie portray apple`
+    Then the output should contain "Meh."
+
   Scenario: Tomato, or Tomato?
     When I run `foodie pluralize --word Tomato`
     Then the output should contain "Tomatoes"

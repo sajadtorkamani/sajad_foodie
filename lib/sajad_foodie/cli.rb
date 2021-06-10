@@ -4,7 +4,7 @@ require 'sajad_foodie/generators/recipe'
 
 module SajadFoodie
   class CLI < Thor
-    desc 'portray ITEM', 'Determines if a piece of food is gross or delicious'
+    desc 'portray ITEM', 'Determines if a piece of food is gross, delicious, or meh'
     def portray(name)
       puts SajadFoodie::Food.portray(name)
     end

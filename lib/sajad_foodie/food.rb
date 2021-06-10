@@ -3,8 +3,11 @@ require 'active_support/inflector'
 module SajadFoodie
   class Food
     def self.portray(food)
-      if food.downcase === 'broccoli'
+      case food.downcase
+      when 'broccoli'
         'Gross!'
+      when 'apple'
+        'Meh.'
       else
         'Delicious!'
       end
